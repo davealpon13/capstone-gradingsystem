@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.container {
+width: 95%;
+margin: 0 auto;
+background-color: #ffffff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+border: 1px solid  black; /* Add a solid black border with 1px width */
+}
+.info-section {
+flex: 0 0 calc(30.33% - 20px); /* Adjust width and margin */
+margin-bottom: 20px;
+border: 1px solid #ccc;
+padding: 10px;
+border-radius: 6px;
+background-color: #74ec66;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+margin-right: 50px;
+}
+.info-sectionn {
+    flex: 0 0 calc(21.99% - 20px); /* Adjust width and margin */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #74ec66;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-right: 50px;
+    }
+
+.info-item {
+    margin-bottom: 10px;
+}
+.info-item strong {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.total-item {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.info-section {
+padding: 10px;
+margin-bottom: 15px;
+background-color:#F8C8DC;
+}
+
+.info-section-student {
+background-color:#fdfd96; /* Student section color */
+}
+
+.info-section-attendance {
+background-color: #A7C7E7; /* Attendance section color */
+}
+.info-section-laboratory{
+    background-color: #A7C7E7; /* Laboratory color */
+}
+.info-sectionn-laboratory{
+    background-color: #A7C7E7; /* Laboratory color */
+}
+
+.info-section-quizzes,.info-section-lecture {
+background-color: #77DD77; /* Quizzes section color */
+}
+.info-section-practical {
+    background-color: #77DD77; /* Quizzes section color */
+    }
+
+.info-section-outputs {
+background-color: #C3B1E1; /* Outputs section color */
+column-count: 2;
+}
+.info-section-weighted {
+    background-color: #C3B1E1; /* Outputs section color */
+    }
+.info-section-weighted-scores{
+background-color: #FAC898
+;
+}
+
+    .info-overall {
+        flex: 0 0 calc(40.33% - 20px); /* Adjust width and margin */
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 6px;
+        background-color: #8eee83;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-right: 150px;
+        
+        }
+
+
+
+
+.info-item {
+padding: 5px;
+}
+.content-text {
+    color: #333;
+    text-align: center;
+    }
+    .content {
+
+        padding: 5px;
+        background-color: #026c3b;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s; /* Add a smooth transition effect for margin-left */
+        margin-right: 10px;
+    }
+
+

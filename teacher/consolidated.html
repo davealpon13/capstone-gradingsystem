@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consolidated</title>
+  <style>
+    /* CSS for print */
+    @media print {
+      /* Hide header and footer for printing */
+      header, footer {
+        display: none;
+      }
+    }
+    .button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #4CAF50; /* Change as per your background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.custom-button {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+    color: #2E7D32; /* Set the text color to white */
+}
+.custom-button a {
+    color: white; /* Set the text color to white for the anchor tag inside the button */
+    text-decoration: none; /* Remove default underline for the anchor tag */
+}
+
+
+
+
+.black-button {
+    background-color:#134f16;
+    color: white;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+}
+
+.custom-button:focus {
+    outline: none;
+}
+.custom-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: #fffdfd;
+    border: 3px solid  #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-submit:hover {
+    background-color: rgb(0, 80, 0); /* Darker shade on hover */
+}
+  </style>
+</head>
+<body>
+    <div class="button-container">
+        <img src="logo.png" width="296" height="64" alt="Logo">
+        <button  class="custom-button black-button"><a href="lecture_midterm.html">LECTURE MIDTERM</a></button>
+        <button  class="custom-button black-button"><a href="lecture_final.html">LECTURE FINAL</a></button>
+        <button  class="custom-button black-button"><a href="laboratory_midterm.html">LABORATORY MIDTERM</a></button>
+        <button  class="custom-button black-button"><a href="laboratory_final.html">LABORATORY FINAL</a></button>
+        <button  class="custom-button black-button"><a href="consolidated.html">CONSOLIDATED</a></button>
+        <button  class="custom-button black-button"><a href="grading_sheet.html">GRADING SHEET</a></button>
+        <button  class="custom-button black-button"><a href="transmutation_table.html">TRANSMUTATION TABLE</a></button>
+    </div>
+
+
+<!-- Input field -->
+<input type="text" name="student_number_${i}" id="studentNumberInput_${i}" placeholder="Student Number" required>
+
+<!-- Input field for student_number_${i} -->
+<input type="text" name="student_number_${i}" id="studentNumberInput_${i}" placeholder="Student Number" required>
+
+<!-- Input field for student_name_${i} -->
+<input type="text" name="student_name_${i}" id="studentNameInput_${i}" placeholder="Student Name" required>
+
+<!-- Input field for student_number_${i} -->
+<input type="text" name="student_number_${i}" id="studentNumberInput_${i}" placeholder="Student Number" required>
+
+<!-- Input field for student_name_${i} -->
+<input type="text" name="student_name_${i}" id="studentNameInput_${i}" placeholder="Student Name" required>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const numberInput = document.getElementById('studentNumberInput_${i}');
+    const nameInput = document.getElementById('studentNameInput_${i}');
+
+    // Retrieve stored data for student_number_${i} on load
+    const storedNumber = localStorage.getItem(`student_number_${i}`);
+    if (storedNumber) {
+      numberInput.value = storedNumber;
+    }
+
+    // Add event listener for student_number_${i} input
+    numberInput.addEventListener('input', function () {
+      localStorage.setItem(`student_number_${i}`, this.value);
+    });
+
+    // Retrieve stored data for student_name_${i} on load
+    const storedName = localStorage.getItem(`student_name_${i}`);
+    if (storedName) {
+      nameInput.value = storedName;
+    }
+
+    // Add event listener for student_name_${i} input
+    nameInput.addEventListener('input', function () {
+      localStorage.setItem(`student_name_${i}`, this.value);
+    });
+  });
+</script>
+
+
+
+
+    
+
+</body>
+</html>

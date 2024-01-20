@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transmutation Table</title>
+  <style>
+    .button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow-x: auto;
+    padding:10px;
+    background-color: #4CAF50; /* Change as per your background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.custom-button {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+    color: #2E7D32; /* Set the text color to white */
+}
+.custom-button a {
+    color: white; /* Set the text color to white for the anchor tag inside the button */
+    text-decoration: none; /* Remove default underline for the anchor tag */
+}
+
+
+
+
+.black-button {
+    background-color:#134f16;
+    color: white;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+}
+
+.custom-button:focus {
+    outline: none;
+}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #282c34;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #36454f;
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #556877;
+    }
+    th {
+      background-color: #2ecc71;
+      color: #fff;
+    }
+    tr:hover {
+      background-color: #455b6f;
+    }
+  </style>
+</head>
+<body>
+    <div class="button-container">
+        <img src="logo.png" width="296" height="64" alt="Logo">
+        <button  class="custom-button black-button"><a href="lecture_midterm.html">LECTURE MIDTERM</a></button>
+        <button  class="custom-button black-button"><a href="lecture_final.html">LECTURE FINAL</a></button>
+        <button  class="custom-button black-button"><a href="laboratory_midterm.html">LABORATORY MIDTERM</a></button>
+        <button  class="custom-button black-button"><a href="laboratory_final.html">LABORATORY FINAL</a></button>
+        <button  class="custom-button black-button"><a href="consolidated.html">CONSOLIDATED</a></button>
+        <button  class="custom-button black-button"><a href="grading_sheet.html">GRADING SHEET</a></button>
+        <button  class="custom-button black-button"><a href="transmutation_table.html">TRANSMUTATION TABLE</a></button>
+    </div>
+
+<h1 style="text-align: center;">Transmutation Table</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start</th>
+      <th>End</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.0</td>
+      <td>49.9</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <td>50.0</td>
+      <td>69.9</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>70.0</td>
+      <td>73.3</td>
+      <td>3.00</td>
+    </tr>
+    <tr>
+      <td>73.4</td>
+      <td>76.6</td>
+      <td>2.75</td>
+    </tr>
+    <tr>
+      <td>76.7</td>
+      <td>80.0</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>80.1</td>
+      <td>83.3</td>
+      <td>2.25</td>
+    </tr>
+    <tr>
+      <td>83.4</td>
+      <td>86.6</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td>86.7</td>
+      <td>90.0</td>
+      <td>1.75</td>
+    </tr>
+    <tr>
+      <td>90.1</td>
+      <td>93.3</td>
+      <td>1.50</td>
+    </tr>
+    <tr>
+      <td>93.4</td>
+      <td>96.6</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>96.7</td>
+      <td>100.0</td>
+      <td>1.00</td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </tbody>
+</table>
+
+</body>
+</html>

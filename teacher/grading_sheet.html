@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grading Sheet</title>
+  <style>
+    
+     /* CSS for print */
+     
+     @media print {
+      /* Hide header, footer, and button container for printing */
+       footer,.custom-button, .button-container,button {
+        display: none!important;
+      }
+    }
+    
+    /* Rest of your styles... */
+     table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .two-columns {
+      column-count: 2;
+      column-gap: 20px; /* Adjust the gap as needed */
+    }
+    .title {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #4CAF50;
+    border: 6px solid #2E7D32;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #4CAF50; /* Change as per your background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.custom-button {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+    color: #2E7D32; /* Set the text color to white */
+}
+.custom-button a {
+    color: white; /* Set the text color to white for the anchor tag inside the button */
+    text-decoration: none; /* Remove default underline for the anchor tag */
+}
+
+
+
+
+.black-button {
+    background-color:#134f16;
+    color: white;
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+}
+
+.custom-button:focus {
+    outline: none;
+}
+.custom-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: #fffdfd;
+    border: 3px solid  #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-submit:hover {
+    background-color: rgb(0, 80, 0); /* Darker shade on hover */
+}
+  </style>
+</head>
+<body>
+    <div class="button-container">
+        <img src="logo.png" width="296" height="64" alt="Logo">
+        <button  class="custom-button black-button"><a href="lecture_midterm.html">LECTURE MIDTERM</a></button>
+        <button  class="custom-button black-button"><a href="lecture_final.html">LECTURE FINAL</a></button>
+        <button  class="custom-button black-button"><a href="laboratory_midterm.html">LABORATORY MIDTERM</a></button>
+        <button  class="custom-button black-button"><a href="laboratory_final.html">LABORATORY FINAL</a></button>
+        <button  class="custom-button black-button"><a href="consolidated.html">CONSOLIDATED</a></button>
+        <button  class="custom-button black-button"><a href="grading_sheet.html">GRADING SHEET</a></button>
+        <button  class="custom-button black-button"><a href="transmutation_table.html">TRANSMUTATION TABLE</a></button>
+    </div>
+
+  <!-- Header -->
+  <header>
+    <center><img src="logo.png" width="296" height="64" alt="Logo"></center>
+    <h1>Grading Sheet</h1>
+    <p>Subject: <input type="text" value="" ></p>
+    <p>Title: <input type="text" value="" ></p>
+    <p>Curriculum Year: <input type="text" value="" ></p>
+    <p>Course: <input type="text" value="" ></p>
+    <p>Semester/Summer: <input type="text" value=""></p>
+  </header>
+
+  <!-- Body - Grading Table -->
+  <main>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Student Number</th>
+          <th>Grade</th>
+          <th>Credit</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample Data -->
+        <tr>
+          <td>John Doeeeeeeeeeeeeeeeeeee</td>
+          <td>202300111111</td>
+          <td>85</td>
+          <td>3</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>202300211111</td>
+          <td>78</td>
+          <td>3</td>
+          <td>Satisfactory</td>
+        </tr>
+        <!-- Add more rows for other students -->
+      </tbody>
+    </table>
+
+    <p style="width: 100%; text-align: center;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Nothing Follows xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    <div style="display: flex;">
+        <div style="width: 30%;">
+          <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+          <p style="text-align: center;">Date:</p>
+        </div>
+        <div style="width: 30%; margin-left: auto;">
+            <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+            <p style="text-align: center;">Name & Signature of Instructor/Professor</p>
+          
+        </div>
+      </div>
+      <center><p>𝐒𝐔𝐌𝐌𝐀𝐑𝐘 𝐎𝐅 𝐃𝐈𝐒𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍</p></center>			
+               
+ <!-- Table for SUMMARY OF DISTRIBUTION -->
+ <table border="1">
+    <thead>
+      <tr>
+        <th>RANGE</th>
+        <th>N</th>
+        <th>%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1:00 – 1:75</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+      <tr>
+        <td>2:00 – 2:75</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+      <tr>
+        <td>Incomplete</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+      <tr>
+        <td>Dropped</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+      <tr>
+        <td>TOTAL</td>
+        <td>0</td>
+        <td>#DIV/0!</td>
+      </tr>
+    </tbody>
+  </table>
+  <style>
+  /* Hide input borders */
+  input[type="text"] {
+    text-decoration: underline;
+    border: none;
+    outline: none;
+  }
+
+
+  /* Rest of your styles... */
+</style>
+
+<div style="display: flex;">
+    <div style="width: 30%;">
+      <p>Recommending Approval:</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+      <p style="text-align: center;">Department Chairperson</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+      <p style="text-align: center;">Date</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+    </div>
+    <div style="width: 30%; margin-left: auto;">
+      <p style="text-align: left;">Noted by:</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+      <p style="text-align: center;">College Registrar</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+      <p style="text-align: center;">Date</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+      <p style="text-align: left;">Approved by:</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+      <p style="text-align: center;">College Dean</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+      <p style="text-align: center;">Date</p>
+      <p style="text-align: left;"><input type="text" style="width: 100%; text-align: center;" placeholder="_______________________________"></p>
+    </div>
+  </div>
+  
+  
+  
+
+  
+          
+
+    <!-- Print Button -->
+    <button onclick="printPage()">Print</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Any footer content if needed -->
+  </footer>
+
+  <!-- JavaScript to handle printing -->
+  <script>
+    function printPage() {
+      window.print();
+    }
+  </script>
+
+</body>
+</html>

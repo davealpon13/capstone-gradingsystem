@@ -1,0 +1,231 @@
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Hide horizontal overflow */
+            font-family: Arial, sans-serif;
+        }
+        .content-text {
+            color: #333;
+            text-align: center;
+        
+}  
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+.profile a.btn {
+    display: block;
+    margin: 10px auto;
+    margin-left: 5px;
+}
+.teacher-card {
+    column-count: 1;
+    background: white; /* Adjust the colors as needed */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+     box-shadow: 10px 30px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.teacher-card .btn {
+    
+    text-align: left;
+}
+
+.register-section{
+    margin-left: 250px;
+}
+
+.teacher-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-card h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.teacher-card p.section {
+    color: #666;
+    margin: 5px 0;
+}
+
+.teacher-card a.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #026c3b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.teacher-card a.btn:hover {
+    background-color: #2980b9;
+}
+
+.icon {
+    margin-left: 0;
+    width: 45px;
+    height: 45px;
+    vertical-align: top;
+    transition: width 0.3s, height 0.3s;
+}
+
+
+.menu-item a {
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+.menu-item img {
+    margin-right: 5px;
+}
+
+
+.content {
+
+    padding: 5px;
+    background-color: #026c3b;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s; /* Add a smooth transition effect for margin-left */
+    margin-right: 10px;
+}
+
+.teacher-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Make sure it's set to row */
+}
+
+.teacher-card {
+    flex-basis: 28%; /* Adjust the width of each subject container */
+    margin: 20px; /* Adjust the margin between subject containers */
+    margin-left: 250px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: #d3dde1;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 78px;
+}
+
+        .sidebar:hover,
+        .sidebar.clicked {
+            width: 250px;
+        }
+
+        .sidebar-content {
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+        }
+
+
+
+.sidebar:hover .icon,
+.sidebar.clicked .icon {
+    width: 50px; /* Adjust the width on hover or click */
+    height: 50px; /* Adjust the height on hover or click */
+}
+
+.sidebar button {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar a {
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #026c3b;
+}
+.sidebar:hover .content {
+    transform: translateX(250px); /* Adjust the margin-left based on the width of the expanded sidebar */
+}
+
+.sidebar.clicked .content {
+    transform: translateX(250px); /* Adjust the margin-left based on the width of the expanded sidebar */
+}
+.sidebar-button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            text-align: center;
+            transition: width 0.3s;
+        }
+
+.sidebar-button:hover {
+    width: 60px; /* Adjust the width on hover as needed */
+}
+
+/* Additional styles for responsive behavior */
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+
+    
+
+    .sidebar:hover,
+    .sidebar.clicked {
+        width: 100%;
+    }
+    .menu-item a:hover {
+            background-color: #01421b;
+        }
+        .sidebar.clicked .menu-item a span {
+    display: none; /* Hide text in collapsed state */
+}
+.sidebar.clicked .menu-item a img {
+    margin-right: 0; /* Adjust margin for the image */
+}
+
+    .sidebar.clicked .icon {
+        width: 50px; /* Adjust the width on click */
+        height: 50px; /* Adjust the height on click */
+    }
+}
+
